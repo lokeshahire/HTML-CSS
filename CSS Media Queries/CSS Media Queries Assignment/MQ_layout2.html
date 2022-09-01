@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+          #nav {
+            width: 95%;
+            height: 80px;
+            margin: auto;
+            background-color: yellow;
+          }
+          #nav > p {
+            padding: 20px 20px;
+            font-size: 30px;
+          }
+          #box {
+            display: flex;
+            width: 95%;
+            height: 400px;
+            margin: auto;
+            margin-top: 20px;
+            justify-content: space-between;
+          }
+          #box > div {
+            width: 47%;
+            /* padding: 10px 20px; */
+            font-size: 30px;
+          }
+          #box > div:nth-child(1) {
+            background-color: red;
+          }
+          #box > div:nth-child(2) {
+            background-color: rgb(44, 235, 75);
+          }
+
+          @media all and (min-width: 320px) and (max-width: 479px) {
+            #box {
+              display: block;
+            }
+            #box > div:nth-child(1) {
+              background-color: red;
+              width: 95%;
+              height: 200px;
+              margin: auto;
+            }
+
+            #box > div:nth-child(2) {
+              background-color: rgb(44, 235, 75);
+              width: 95%;
+              height: 200px;
+              margin: auto;
+              margin-top: 20px;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <div id="nav"><p>Navigation</p></div>
+        <div id="box">
+          <div>
+            <p>LEFT BOX</p>
+          </div>
+          <div><p>RIGHT BOX</p></div>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>

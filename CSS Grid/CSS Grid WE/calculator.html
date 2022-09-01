@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #container {
+        width: 320px;
+        height: 450px;
+        display: flex;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        justify-content: center;
+        /* border: 1px solid red; */
+        margin-top: 200px;
+        margin-left: -350px;
+      }
+      #calContainer {
+        width: 85%;
+        height: 90%;
+        width: auto;
+        background-color: white;
+        margin-top: 40px;
+      }
+      #container > #calContainer > #calpage {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(4, 60px);
+        grid-template-rows: repeat(4, 60px);
+      }
+      .numbuttons {
+        background-color: white;
+        border: 0px;
+        border-radius: 8px;
+        font-size: x-large;
+      }
+      #displaydiv {
+        width: 100%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      .funbutton {
+        background-color: black;
+        color: white;
+        font-size: x-large;
+      }
+      #specialbutton {
+        background-color: red;
+        color: white;
+        font-size: x-large;
+      }
+      #calpage button {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: 0px;
+        border-radius: 8px;
+      }
+      h1 {
+        font-size: 50px;
+        color: rgb(32, 128, 128);
+        text-align: center;
+        margin-top: -500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Masai Calculator</h1>
+    <div id="container">
+      <div id="calContainer">
+        <div id="displaydiv"></div>
+        <form action="" id="calpage">
+          <button class="numbuttons" id="b1">1</button>
+          <button class="numbuttons">2</button>
+          <button class="numbuttons">3</button>
+          <button class="funbutton">+</button>
+          <button class="numbuttons">4</button>
+          <button class="numbuttons">5</button>
+          <button class="numbuttons">6</button>
+          <button class="funbutton">-</button>
+          <button class="numbuttons">7</button>
+          <button class="numbuttons">8</button>
+          <button class="numbuttons">9</button>
+          <button class="funbutton">*</button>
+          <button id="specialbutton">C</button>
+          <button class="numbuttons">0</button>
+          <button class="funbutton">=</button>
+          <button class="funbutton">/</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

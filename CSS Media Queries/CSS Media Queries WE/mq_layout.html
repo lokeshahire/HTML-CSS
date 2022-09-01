@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #nav {
+        width: 80%;
+        height: 50px;
+        margin: auto;
+        font-size: 30px;
+        background-color: yellow;
+      }
+      #nav > p {
+        padding: 10px 20px;
+      }
+      #box {
+        display: grid;
+        width: 80%;
+        margin: auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px;
+        gap: 20px;
+        padding-top: 30px;
+      }
+      #box > div {
+        font-size: 25px;
+        padding: 10px 20px;
+        color: rgb(100, 110, 100);
+      }
+      #box > div:nth-child(1) {
+        background-color: red;
+      }
+      #box > div:nth-child(2) {
+        background-color: rgb(53, 201, 53);
+      }
+      #box > div:nth-child(3) {
+        background-color: rgb(44, 120, 192);
+      }
+      #box > div:nth-child(4) {
+        background-color: rgb(138, 132, 123);
+      }
+      @media all and (min-width: 480px) and (max-width: 720px) {
+        #nav {
+          width: 90%;
+          height: 50px;
+          margin: auto;
+          font-size: 25px;
+          background-color: yellow;
+        }
+
+        #box {
+          width: 90%;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 200px);
+        }
+
+        #box > div:nth-child(2) {
+          background-color: rgb(53, 201, 53);
+          order: 9;
+        }
+        #box > div:nth-child(3) {
+          background-color: rgb(44, 120, 192);
+          order: 8;
+        }
+        #box > div:nth-child(4) {
+          background-color: rgb(138, 132, 123);
+          order: 10;
+        }
+      }
+      @media all and (min-width: 320px) and (max-width: 479px) {
+        #nav {
+          width: 95%;
+          height: 50px;
+          margin: auto;
+          font-size: 25px;
+          background-color: yellow;
+        }
+
+        #box {
+          width: 95%;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(4, 100px);
+        }
+
+        #box > div:nth-child(2) {
+          background-color: rgb(53, 201, 53);
+          order: 9;
+        }
+        #box > div:nth-child(3) {
+          background-color: rgb(44, 120, 192);
+          order: 10;
+        }
+        #box > div:nth-child(4) {
+          background-color: rgb(138, 132, 123);
+          order: 8;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav"><p>Navigation</p></div>
+    <div id="box">
+      <div>Box 1</div>
+      <div>Box 2</div>
+      <div>Box 3</div>
+      <div>Box 4</div>
+    </div>
+  </body>
+</html>
