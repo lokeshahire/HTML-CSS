@@ -1,0 +1,91 @@
+#expense-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#expense-box #form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#form label {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+#expense-box h1 {
+  color: blue;
+  text-decoration: underline;
+}
+
+#form input {
+  outline: none;
+  padding: 0.5rem 1rem;
+  width: 75%;
+  border-radius: 3px;
+  /* border:none; */
+}
+
+#month {
+  width: 20%;
+  height: 50px;
+  border-radius: 3px;
+  /* border:none; */
+  outline: none;
+}
+#income {
+  width: 20%;
+  height: 40px;
+  border: 2px solid red;
+}
+#expense {
+  width: 20%;
+  height: 40px;
+  border: 2px solid red;
+}
+#submit {
+  margin-top: 15px;
+  padding: 0.5rem 1rem;
+  width: 90%;
+  /* width: 110%;
+  height: 50px; */
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: blue;
+  border-radius: 20px;
+}
+#report {
+  margin-top: 30px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, auto);
+  justify-content: space-around;
+  align-items: center;
+}
+
+#report > div {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: #fff;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+}
+#report > div p {
+  color: green;
+}
+
+#report > div > p + p {
+  color: red;
+}

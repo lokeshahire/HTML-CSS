@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Submit</title>
+    <style>
+      form {
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="name" id="myName" placeholder="Name" />
+      <input type="number" name="age" id="myAge" placeholder="Age" />
+      <select id="myGender">
+        <option value="">Gender</option>
+        <option value="male">M</option>
+        <option value="female">F</option>
+      </select>
+      <input type="text" name="email" id="myEmail" placeholder="Email" />
+      <input type="number" name="mobile" id="myMobile" placeholder="Mobile" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", myFunc);
+  let array = [];
+  function myFunc(event) {
+    event.preventDefault();
+
+    let object = {
+      Myname: document.querySelector("#myName").value,
+      Myage: document.querySelector("#myAge").value,
+      Mygender: document.querySelector("#myGender").value,
+      Myemail: document.querySelector("#myEmail").value,
+      Mymobile: document.querySelector("#myMobile").value,
+    };
+
+    array.push(object);
+
+    console.log(array);
+  }
+</script>

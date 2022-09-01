@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      #navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+        background-color: #1d2939;
+        color: white;
+        width: 96%;
+        margin: 20px auto;
+        border-radius: 20px;
+      }
+
+      #nav {
+        margin-right: 50px;
+      }
+
+      #navbar div:last-of-type {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      #mens,
+      #womens {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        padding: 20px;
+      }
+
+      p {
+        font-weight: 600;
+        margin: 10px 0px;
+      }
+
+      button {
+        font-weight: 600;
+        margin: 10px 0px;
+        padding: 4px 7px;
+      }
+      button:hover {
+        background-color: #1d2939;
+        color: azure;
+        cursor: pointer;
+      }
+
+      h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #navbar > div > a {
+        display: flex;
+      }
+
+      #navbar > div > a > img {
+        width: 30%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <div>
+        <a href="index.html">
+          <img
+            style="width: 200px; height: 100px; margin-top: -10px"
+            src="
+ https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJhEEO5dP3P_wBJWh01LlYs6pZ4JD5SyXLMg&usqp=CAU"
+            alt=""
+          />
+        </a>
+      </div>
+      <div id="nav">
+        <h3><a href="mens.html">Men</a></h3>
+        <h3><a href="women.html">Women</a></h3>
+        <h3><a href="login.html">Sign In</a></h3>
+        <h3><a href="signup.html">Sign Up</a></h3>
+        <h3><a href="signup.html">Cart</a></h3>
+      </div>
+    </div>
+  </body>
+</html>
